@@ -18,18 +18,18 @@ generateBtn.addEventListener("click", writePassword);
 
 function generatePassword(){
 
-
+// Initial prompt for password length
   var length = Number(prompt("Number of characters in password. Enter: 8-128."));
 
+  // Arrays for character types
   var number = [0,1,2,3,4,5,6,7,8,9];
   var lowercase = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
   var uppercase = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
   var special = ['!','@','#','$','%','^','&','*','(',')'];
   var userChars = [];
   var userPassword = [];
-  var atleastone = [];
-  var criteria = [];
     
+  // prompts for criteria
   if (length >= 8 && length <= 128){
     var numberPrompt = window.confirm("do you want to include numbers?");
     var lowercasePrompt = window.confirm("do you want to include lowercase letters?");
@@ -51,14 +51,19 @@ function generatePassword(){
   if (specialPrompt === true) {
     userChars = userChars.concat(special)
   }
-
+// alert that they must choose a prompt
   if (numberPrompt === false && lowercasePrompt === false && uppercasePrompt === false && specialPrompt === false) {
     alert(" Must include at least one character type")
   }
 
+  // creating userPassword with for loop
   for (i= 0; i < length; i++) {
     userPassword.push(userChars[Math.floor(Math.random() * userChars.length)]);
   }
+
+  // I initially made a shuffle function and then spliced the length of the requested password on the UserChars. 
+  // It works but it will only return a password as long as the arrays chosen for criteria
+  
   // var randomGroup = function(arr, num){
   //   const shuffle = [...arr].sort(() => 0.5 - Math.random());
   //   return shuffle.splice(0,num);
