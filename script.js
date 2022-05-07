@@ -61,9 +61,9 @@ function generatePassword(){
     userPassword.push(userChars[Math.floor(Math.random() * userChars.length)]);
   }
 
-  // I initially made a shuffle function and then spliced the length of the requested password on the UserChars. 
+  // I initially made a shuffle function and then spliced the length of the requested password on the UserChars. *Credit https://javascript.info/task/shuffle  
   // It works but it will only return a password as long as the arrays chosen for criteria
-  
+
   // var randomGroup = function(arr, num){
   //   const shuffle = [...arr].sort(() => 0.5 - Math.random());
   //   return shuffle.splice(0,num);
