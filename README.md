@@ -18,4 +18,9 @@ target="_blank"> Deployed Webpage</a>
 
 ## screenshot
 
-![Screenshot of page] 
+![Screenshot of page](https://raw.githubusercontent.com/jgood13/passwordgen/main/assets/2022-05-06_230132.png?raw=true "Page Screenshot")
+
+## credits
+
+1. <a href="https://javascript.info/task/shuffle" target="_blank">javascript.info,</a>
+2. <a href="https://www.w3schools.com/js/js_loop_for.asp" target="_blank">w3schools,</a>
