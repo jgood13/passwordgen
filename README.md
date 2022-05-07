@@ -18,7 +18,7 @@ target="_blank"> Deployed Webpage</a>
 
 ## screenshot
 
-![Screenshot of page](https://raw.githubusercontent.com/jgood13/passwordgen/main/assets/2022-05-06_230132.png?raw=true "Page Screenshot")
+![Screenshot of page](./Assets/2022-05-06_230132.png "Page Screenshot")
 
 ## credits
 
